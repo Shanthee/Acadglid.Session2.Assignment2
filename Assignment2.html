@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Assignment 1 that illustrates Inline, Embedded and External Styles. I have used all the 3 in the same file-->
+    <!--<title> tag displays title of the page-->
+		<title>WordPress Theme</title>
+		<meta name="description" content="Web Assignment">
+		<meta name="keywords" content="CSS, Design wordpress theme">
+		<meta name="author" content="Shanthee Sampath">
+		<style>
+			body {
+        		width:80%;
+        		margin-left:auto;
+        		margin-right:auto;
+    			font-size: 20px;
+    		}
+			header h1 {
+				position: relative;
+                top: 18px;
+                left: 10px;
+                font-size: 75px;
+				font-family: Merriweather;
+			}
+			header img {
+				 float: left;
+                 width: 100px;
+                 height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<header style="margin:auto">
+			<img src="Wordpress.png"/>
+			<h1>
+				<span style="color: #3368ff">
+				<span style="font-size: 150%">W</span>ORD</span><span style="font-size: 150%">P</span>RESS
+			</h1>
+		</header>
+		<section>
+			<form name="form1" action="submit.php" method="get">
+				<label name="upload">Upload a theme</label>
+				<input type="file" style="width:250px" value="Browse" />
+				<br/>
+				<label name="search">Or search in wordpress</label>
+				<input type="search" name="wordpress_search" results=5 autosave=a_unique_value />
+				<input type="image" src="Wordpress.jpeg" name="search_wordpress" class="search_wordpress" id="search_wp" width=25px height=25px/>
+			</form>
+	</body>
+</html>
